@@ -1,8 +1,8 @@
 package szeged.redSteed.test
 
-import uy.com.collokia.common.utils.measureTimeInMillis
-import uy.com.collokia.common.utils.rdd.closeSpark
-import uy.com.collokia.common.utils.rdd.getLocalSparkContext
+import szeged.redSteed.closeSpark
+import szeged.redSteed.getLocalSparkContext
+import szeged.redSteed.measureTimeInMillis
 
 
 class RunSpark {
