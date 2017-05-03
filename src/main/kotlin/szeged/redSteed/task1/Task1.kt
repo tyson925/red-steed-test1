@@ -64,7 +64,8 @@ class Task1 {
             val normalizedUserEventCount = userEventsCount.map { userEventCount ->
                 val (category, eventFreq) = userEventCount
                 val normalizedFreq = eventFreq / (categoriesFreq.value[category]?.toDouble() ?: 0.0)
-                Tuple2(category, normalizedFreq)
+                //Tuple2(category, normalizedFreq)
+                normalizedFreq
             }
 
             Tuple2(userID, normalizedUserEventCount)
