@@ -9,7 +9,9 @@ class Task1 {
         @JvmStatic fun main(args: Array<String>) {
             val time = measureTimeInMillis {
                 val task1 = Task1()
-                task1.runTask1("./data/user_test_30000.csv", isSaveResults = true, isDebug = true)
+                val file1 = "user_test_30000.csv"
+                val file2 = "user_test_100000.csv"
+                task1.runTask1("./data/$file2", isSaveResults = true, isDebug = true)
             }
             println("Execution time was ${time.second}")
         }
